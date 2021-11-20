@@ -10,7 +10,7 @@ app = Flask(__name__)
 csrf = CSRFProtect(app)
 
 # adding secret key to use csrf
-SECRET_KEY = os.urandom(32)
+SECRET_KEY = 'bee5440b158ed12baa4c1db1e06177b5e42f7f43cb4b5eebe5884111728d1125'
 app.config['SECRET_KEY'] = SECRET_KEY
 
 # setting the environments and configuring databases for the different environments
