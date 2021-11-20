@@ -4,6 +4,7 @@ from flask_wtf.csrf import CSRFProtect
 from flask_sqlalchemy import SQLAlchemy
 
 from forms import SubmitAddressForm
+from app import db, app
 
 app = Flask(__name__)
 csrf = CSRFProtect(app)
