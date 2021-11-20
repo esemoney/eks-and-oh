@@ -1,0 +1,38 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
+body a {
+    color: white;
+}
+
+button {
+    width: 300px;
+    height: 65px;
+    font-size: 20px;
+}
+
+.patterned-top {
+    background: url(../images/pattern1.png);
+    height: 180px;
+    background: linear-gradient( rgba(105, 105, 105, 0.5), rgba(104, 102, 102, 0.5)), url(../images/pattern1.png);
+    background-size: center top/cover no-repeat local;
+}
+
+.patterned-top h1 {
+    margin-top: 0;
+    padding-top: 30px;
+    padding-left: 30px;
+}
+
+.game-bottom {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    position: center;
+}
+
+.game-bottom h1 {
+    text-transform: uppercase;
+}

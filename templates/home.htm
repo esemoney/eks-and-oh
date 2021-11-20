@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../static/css/main.css">
+    <link rel="stylesheet" href="../static/css/pseudostyles.css">
+    <title>tic-tac-toe</title>
+</head>
+
+<body>
+    <nav>
+        <div class="left-nav">
+            <h2>
+                <a href="">tic-tac-toe</a>
+            </h2>
+        </div>
+        <div class="right-nav">
+            <button class="connect">connect wallet</button>
+        </div>
+    </nav>
+
+    <section class="main">
+        <div class="left">
+            <img src="../static/images/image.jpg" alt="tic toe game board" height="92%" />
+        </div>
+        <div class="right">
+            <div class="top">
+                <h1 class="welcome">welcome to tic-tac-toe</h1>
+                <p>play to win cool prizes :)</p>
+            </div>
+            <div class="bottom">
+                <h1>Ready?</h1>
+                {% if message %}
+                <p class="message" style="color: red;">{{message | safe}}</p>
+                {% endif %}
+                <form action="/submit" method="POST">
+
+                    <input type="hidden" name="csrf_token" value="{{ csrf_token() }}" />
+
+                    <div class="address">
+                        <label for="username">Enter your ethereum wallet address</label>
+                        <input type="text" name="address" class="address-field" placeholder="0x29d7d1dd5b6f0c864d9db560d72a247c178ae85b" required />
+                    </div>
+                    <br>
+                    <div class="submit-button">
+                        <input type="submit" name="submit-button" class="button" />
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <h4>Powered by Helicarrier © 2021</h4>
+    </footer>
+</body>
+
+</html>

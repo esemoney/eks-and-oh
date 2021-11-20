@@ -1,0 +1,103 @@
+@font-face {
+    font-family: Poppins;
+    src: url(../font/Poppins/Poppins-Regular.ttf);
+}
+
+body {
+    /* background-color: rgb(246, 246, 246); */
+    background-color: #fdf0e6;
+    /* color: #3e3e3e; */
+    color: rgb(22, 22, 22);
+    font-family: Poppins;
+}
+
+body a {
+    text-decoration: none;
+}
+
+nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+section.main {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.left-nav {
+    padding-top: 2px;
+    /* padding-right: 30px; */
+    padding-left: 30px;
+}
+
+.left-nav a {
+    color: rgb(22, 22, 22);
+}
+
+.right-nav {
+    padding-top: 22px;
+    padding-right: 30px;
+}
+
+button {
+    width: 150px;
+    height: 39px;
+    border-radius: 5px;
+    border: 0;
+    color: white;
+    background-color: #F08E80;
+    font-size: 16px;
+}
+
+.left {
+    width: 1200px;
+    padding-left: 32px;
+    padding-top: 40px;
+}
+
+.top h1 {
+    padding-top: 25px;
+    padding-bottom: 0px;
+    padding-right: 30px;
+    margin-bottom: 15px;
+    font-size: 45px;
+    /* color: red; */
+}
+
+.right p {
+    padding-top: 0px;
+    font-size: 23px;
+    padding-bottom: 15px;
+}
+
+.bottom h1 {
+    font-size: 27px;
+}
+
+.bottom label {
+    font-size: 16px;
+}
+
+.bottom input.address-field {
+    height: 40px;
+    width: 310px;
+    padding: 3px;
+    border: 1px solid rgb(163, 163, 163);
+}
+
+.bottom input.button {
+    width: 150px;
+    height: 39px;
+    border-radius: 5px;
+    border: 0;
+    color: white;
+    background-color: #F08E80;
+    font-size: 16px;
+    text-transform: lowercase;
+}
+
+footer {
+    text-align: center;
+}

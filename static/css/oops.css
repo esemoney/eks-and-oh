@@ -1,0 +1,16 @@
+body a {
+    color: white;
+}
+
+.pic {
+    padding-top: 15px;
+    display: flex;
+    justify-content: center;
+}
+
+.actions {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
